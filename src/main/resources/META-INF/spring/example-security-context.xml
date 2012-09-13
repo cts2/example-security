@@ -18,13 +18,13 @@
 
 	<context:annotation-config />
 
+	<security:http pattern="/" security="none"/>
+	<security:http pattern="/resources/**" security="none"/>
+	<security:http pattern="/system/**" security="none"/>
+
 		<security:http name="exampleHttpSecurity">
-			<security:intercept-url method="POST" pattern="/**"
+			<security:intercept-url pattern="/**"
 				access="ROLE_ADMINISTRATOR" />
-			<security:intercept-url method="PUT" pattern="/**"
-				access="ROLE_ADMINISTRATOR" />
-			<security:intercept-url method="DELETE"
-				pattern="/**" access="ROLE_ADMINISTRATOR" />
 			<security:http-basic />
 		</security:http>
 

@@ -4,7 +4,7 @@
 
 	<groupId>edu.mayo.cts2.framework</groupId>
 	<artifactId>example-security</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>bundle</packaging>
 	<name>Example CTS2 Developement Framework Security Plugin</name>
 
